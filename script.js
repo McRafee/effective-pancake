@@ -2,20 +2,20 @@ const output = document.getElementById('output');
 
 // Simulated typing text targeting a fictional institutional website
 const commands = [
-  "Initializing targeted attack on: www.government-portal.org...",
-  "Running reconnaissance on www.government-portal.org...",
+  "Initializing targeted attack on: www.inps.it...",
+  "Running reconnaissance on www.inps.it...",
   "Discovered potential vulnerabilities:",
   "  - Outdated SSL Certificate (expires in 2 days)",
   "  - Open ports: 22, 80, 443",
   "Establishing connection to government database...",
   "Attempting SQL injection on endpoint /api/v1/citizen-records...",
   "Injection successful! Accessing citizen database...",
-  "Extracting sensitive data: [Names, Social Security Numbers, Addresses]...",
+  "Extracting sensitive data: [Name, Fiscal code, Address]...",
   "Scanning internal network for additional entry points...",
-  "Breaching secure server at 192.168.1.254...",
+  "Breaching secure server at 93.63.43.48...",
   "Downloading classified documents from /secure/internal/docs...",
   "Detected counter-intrusion measures! Deploying anti-trace protocols...",
-  "Wiping all logs from www.government-portal.org...",
+  "Wiping all logs from www.inps.it...",
   "Exfiltration complete. Data saved to local server.",
   "Operation successful. Disconnecting from target."
 ];
