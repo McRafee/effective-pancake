@@ -1,3 +1,4 @@
+/* Aggiungi uno stile base per body */
 body {
   margin: 0;
   background-color: #000;
@@ -7,25 +8,31 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow: hidden; /* Previene lo scrolling */
 }
 
+/* Stile per la finestra del terminale */
 .terminal {
-  width: 80%;
-  max-width: 900px;
-  height: 60%;
+  width: 100%;
+  height: 100%;
   background: #111;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  border-radius: 0; /* Nessun bordo arrotondato per occupare tutto */
+  box-shadow: none; /* Rimuove l'effetto ombra */
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
+/* Header del terminale */
 .terminal-header {
   display: flex;
   padding: 5px;
   background: #222;
   justify-content: flex-start;
+  flex-shrink: 0; /* Impedisce che l'header venga ridimensionato */
 }
 
+/* Pallini stile finestra */
 .header-circle {
   width: 12px;
   height: 12px;
@@ -37,14 +44,16 @@ body {
 .header-circle.yellow { background: #ffbd2e; }
 .header-circle.green { background: #27c93f; }
 
+/* Corpo del terminale */
 .terminal-body {
   padding: 15px;
-  height: calc(100% - 30px);
-  overflow-y: auto;
+  flex-grow: 1; /* Riempie tutto lo spazio disponibile */
+  overflow-y: auto; /* Aggiunge uno scroll verticale se necessario */
   line-height: 1.5;
 }
 
 #output {
   white-space: pre-wrap;
   word-wrap: break-word;
+  font-size: 16px; /* Aumenta la leggibilità su mobile */
 }
